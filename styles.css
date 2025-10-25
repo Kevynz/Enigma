@@ -1,38 +1,438 @@
-/* Estilos globais para logo e favicon */
+/* Reset e configurações base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 15px;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Typography */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+}
+
+h2, h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Logo */
 .header-logo {
     text-align: center;
     margin-bottom: 20px;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: clamp(50px, 8vw, 80px);
+    height: clamp(50px, 8vw, 80px);
     border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.08) rotate(5deg);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Para páginas internas, logo menor */
-.container .location-icon + .header-logo .logo,
-.container .header-logo + .location-icon ~ * .logo {
-    width: 60px;
-    height: 60px;
+/* Cards e seções */
+.location-card, .riddle-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.location-card:hover, .riddle-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.locations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.riddles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Seções especiais */
+.intro {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin-bottom: 30px;
+    color: #555;
+    padding: 20px;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 15px;
+}
+
+.instructions {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px 0;
+    border-left: 5px solid #667eea;
+    text-align: left;
+}
+
+.riddles-preview {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border-left: 5px solid #ffc107;
+}
+
+.qr-section {
+    margin: 30px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+}
+
+.qr-code img {
+    width: clamp(120px, 25vw, 180px);
+    height: clamp(120px, 25vw, 180px);
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Ícones de localização */
+.location-icon {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+.back-button, .solution-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 10px;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.back-button:hover, .solution-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4c93 100%);
+}
+
+/* Links */
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5a6fd8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px 15px;
+        margin: 0 5px;
+    }
+    
+    .locations, .riddles-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .instructions {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .location-card, .riddle-card {
+        padding: 15px;
+    }
+    
+    .qr-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+        border-radius: 15px;
+    }
+    
+    .back-button, .solution-button {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+        margin: 10px 5px;
+    }
+    
+    .riddles-preview, .instructions {
+        padding: 20px 15px;
+    }
+}
+
+/* Seção de solução */
+.solution-section {
+    margin-top: 40px;
+    padding: 25px;
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border-radius: 15px;
+    border-left: 5px solid #28a745;
+}
+
+.solution-button {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.solution-button:hover {
+    background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.6);
+}
+
+/* Estilos específicos para charadas */
+.riddle {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px 0;
+    border-left: 5px solid #667eea;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    text-align: left;
+}
+
+.hint {
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 10px;
+    border-left: 3px solid #667eea;
+}
+
+/* Resposta destacada */
+.answer-box {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 25px 0;
+    border-left: 5px solid #ffc107;
+    font-weight: 600;
+    color: #856404;
+}
+
+/* Estilos para página de solução */
+.answers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 15px;
+}
+
+.answer-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 3px solid #667eea;
+    font-weight: 600;
+    color: #495057;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.final-message {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+    border-left: 5px solid #28a745;
+}
+
+.final-message h2 {
+    color: #155724;
+    margin-bottom: 20px;
+}
+
+.final-message .phrase {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-weight: 700;
+    color: #0f5132;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+.bible-explanation {
+    background: linear-gradient(135deg, #e2e3f1 0%, #d6d8f0 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px 0;
+    border-left: 5px solid #667eea;
+}
+
+.bible-explanation h3 {
+    color: #495057;
     margin-bottom: 15px;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
-    .logo {
-        width: 60px;
-        height: 60px;
+    .answers-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
     }
     
-    .container .header-logo .logo {
-        width: 50px;
-        height: 50px;
+    .final-message {
+        padding: 20px;
+    }
+    
+    .final-message .phrase {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+}
+
+/* Compatibilidade com classes existentes da solução */
+.answer-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 3px solid #667eea;
+    font-weight: 600;
+    color: #495057;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.answer-card h4 {
+    margin: 0 0 10px 0;
+    color: #667eea;
+    font-size: 1rem;
+}
+
+.answer-card p {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #495057;
+}
+
+.final-solution {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+    border-left: 5px solid #28a745;
+}
+
+.final-solution h2 {
+    color: #155724;
+    margin-bottom: 20px;
+}
+
+.final-phrase {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-weight: 700;
+    color: #0f5132;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+.explanation {
+    background: linear-gradient(135deg, #e2e3f1 0%, #d6d8f0 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px 0;
+    border-left: 5px solid #667eea;
+}
+
+.explanation h3 {
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.congratulations {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px 0;
+    border-left: 5px solid #ffc107;
+}
+
+.congratulations h3 {
+    color: #856404;
+    margin-top: 0;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 40px;
+    }
+    
+    .locations {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .riddles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .answers-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
