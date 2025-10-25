@@ -32,11 +32,11 @@ Este é um sistema de caça ao tesouro bíblico desenvolvido para igrejas pentec
 - **Resposta**: 1Co(12:25) 6 = "cuidado"
 - **Versículo**: "Para que não haja divisão no corpo, mas que os membros tenham igual cuidado uns dos outros." (ARC)
 
-### 5. **📚 Biblioteca** (`biblioteca.html`)
-- **Função**: Local onde se estuda e busca conhecimento
-- **Charada**: Sobre edificar uns aos outros
-- **Resposta**: Rm(15:2) 10 = "bom"
-- **Versículo**: "E que cada um de nós agrade ao seu próximo no que é bom para edificação." (ARC)
+### 5. **🎵 Lugar dos Instrumentos** (`biblioteca.html`)
+- **Função**: Local onde ficam os instrumentos musicais
+- **Charada**: Sobre louvor em harmonia
+- **Resposta**: Ef(5:19) 9 = "cantando"
+- **Versículo**: "Falando entre vós em salmos, e hinos, e cânticos espirituais, cantando e salmodiando ao Senhor no vosso coração." (ARC)
 
 ### 6. **👶 Salão Infantil** (`salaoinfantil.html`)
 - **Função**: Local onde se ensina as crianças sobre Jesus
@@ -44,17 +44,17 @@ Este é um sistema de caça ao tesouro bíblico desenvolvido para igrejas pentec
 - **Resposta**: Gl(6:2) 6 = "cumprireis"
 - **Versículo**: "Levai as cargas uns dos outros, e assim cumprireis a lei de Cristo." (ARC)
 
-### 7. **📋 Secretaria** (`secretaria.html`)
-- **Função**: Local onde se organiza e administra a igreja
-- **Charada**: Sobre administrar os dons
-- **Resposta**: 1Pe(4:10) 13 = "despenseiros"
-- **Versículo**: "Cada um administre aos outros o dom como o recebeu, como bons despenseiros da multiforme graça de Deus." (ARC)
+### 7. **� Banheiro** (`secretaria.html`)
+- **Função**: Local de higiene e limpeza pessoal
+- **Charada**: Sobre pureza e santificação
+- **Resposta**: Is(52:11) 8 = "vasos"
+- **Versículo**: "Retirai-vos, retirai-vos, saí daí, não toqueis coisa imunda; saí do meio dela, purificai-vos, vós que levais os vasos do Senhor." (ARC)
 
-### 8. **🌻 Jardim** (`jardim.html`)
-- **Função**: Local que mostra a criação e beleza de Deus
-- **Charada**: Sobre sermos construção divina
-- **Resposta**: 1Co(3:9) 9 = "edifício"
-- **Versículo**: "Porque somos cooperadores de Deus; vós sois lavoura de Deus, edifício de Deus sois." (ARC)
+### 8. **📦 Depósito** (`jardim.html`)
+- **Função**: Local onde se guardam materiais e objetos
+- **Charada**: Sobre acumular tesouros no céu
+- **Resposta**: Mt(6:20) 4 = "tesouros"
+- **Versículo**: "Mas ajuntai tesouros no céu, onde nem a traça nem a ferrugem consomem, e onde os ladrões não minam nem roubam." (ARC)
 
 ## 📖 Sistema de Codificação
 
@@ -68,7 +68,9 @@ O formato de resposta segue o padrão: **Livro(capítulo:versículo) número_da_
 - **1Co** = 1 Coríntios
 - **Rm** = Romanos
 - **Gl** = Gálatas
-- **1Pe** = 1 Pedro
+- **Ef** = Efésios
+- **Is** = Isaías
+- **Mt** = Mateus
 
 ## 🔧 Implementação dos QR Codes
 
@@ -130,19 +132,19 @@ E remova os comentários:
 ## 🌟 Frase Final Formada - TRABALHO EM EQUIPE
 
 Coletando todas as palavras na ordem dos locais:
-**"Corpo sejais corpo cuidado bom cumprireis despenseiros edifício"**
+**"Corpo sejais corpo cuidado cantando cumprireis vasos tesouros"**
 
 Esta sequência ensina sobre colaboração cristã:
 - **Corpo** - Somos um só corpo em Cristo
 - **Sejais** - Chamado à unidade  
 - **Corpo** - Reforça nossa união
 - **Cuidado** - Cuidado mútuo entre irmãos
-- **Bom** - O que é edificante
+- **Cantando** - Louvor e adoração em conjunto
 - **Cumprireis** - Ação de completar/realizar
-- **Despenseiros** - Administradores dos dons
-- **Edifício** - Construção conjunta da igreja
+- **Vasos** - Instrumentos nas mãos de Deus
+- **Tesouros** - Valores eternos que acumulamos
 
-**Mensagem Final:** *"Sejam um só corpo, tenham cuidado uns dos outros, façam o bem, cumpram a lei de Cristo, sejam bons administradores e construam juntos o edifício de Deus!"*
+**Mensagem Final:** *"Sejam um só corpo, tenham cuidado uns dos outros, louvem cantando juntos, cumpram a lei de Cristo, sejam vasos nas mãos de Deus e acumulem tesouros no céu!"*
 
 ## 🔄 Personalização
 
