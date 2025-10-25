@@ -6,6 +6,16 @@ Este é um sistema de caça ao tesouro bíblico desenvolvido para igrejas pentec
 
 **Tradução Bíblica Utilizada:** Almeida Revista e Corrigida (ARC)
 
+## 🎨 **Design e Identidade Visual**
+
+### **Logo e Favicon:**
+- **Logo**: `logo192.svg` - Logo SVG responsivo com design cristão
+  - Cruz estilizada sobre fundo circular com gradiente
+  - Bíblia aberta representando conhecimento bíblico
+  - Texto "ENIGMA" integrado ao design
+- **Favicon**: `favicon.ico` - Ícone do navegador
+- **Estilo**: Gradiente azul-roxo harmônico, design limpo e moderno
+
 ## 🏛️ Locais e Charadas - TEMA: TRABALHO EM EQUIPE
 
 ### 1. **🎤 Púlpito** (`pulpito.html`)

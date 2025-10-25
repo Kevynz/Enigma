@@ -1,0 +1,38 @@
+/* Estilos globais para logo e favicon */
+.header-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Para páginas internas, logo menor */
+.container .location-icon + .header-logo .logo,
+.container .header-logo + .location-icon ~ * .logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .container .header-logo .logo {
+        width: 50px;
+        height: 50px;
+    }
+}
